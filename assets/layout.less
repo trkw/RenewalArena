@@ -1,0 +1,96 @@
+.wrapper {
+  flex: 1 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 180px 10px 180px 10px 394px 1fr;
+  grid-template-rows: 73px 143px 1fr;
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 180px 10px 180px 10px 394px 1fr;
+  -ms-grid-rows: 73px 143px 1fr;
+  min-height: 100%;
+  width: 100%;
+
+  .shika {
+    background: url('http://www.naruto-arena.com/images/layout/leftheader.jpg') top right no-repeat #f4b005;
+    border-bottom: 1px solid black;
+    grid-column: 1/ span 5;
+    grid-row: 1 / span 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column-span: 5;
+  }
+
+  .nav {
+    grid-column: 2/ span 1;
+    grid-row: 1 / span 2;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column-span: 2;
+  }
+
+  .header {
+    background: url('http://www.naruto-arena.com/images/layout/header.gif') top right no-repeat;
+    grid-column: 6 / span 1;
+    grid-row: 1 / span 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-row-span: 1;
+    -ms-grid-column-span: 1;
+    border: 1px solid black;
+    border-top: none;
+  }
+
+  .random {
+    background: url('http://www.naruto-arena.com/images/randomheader/header18.jpg') top right no-repeat;
+    grid-column: 6 / span 1;
+    grid-row: 2 / span 1;
+    -ms-grid-row: 2;
+    -ms-grid-column: 6;
+    -ms-grid-row-span: 1;
+    -ms-grid-column-span: 1;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .sidenav-1 {
+    background-color: #1a99ea;
+    border: 1px solid black;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column-span: 1;
+  }
+  .sidenav-2 {
+    background-color: #1a99ea;
+    border: 1px solid black;
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column-span: 1;
+  }
+  .main {
+    background-color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    grid-column: 4 / span 3;
+    grid-row: 3 / span 1;
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column-span: 3;
+    &.fat {
+      grid-column: 6 / span 1;
+      -ms-grid-column: 6;
+      -ms-grid-column-span: 1;
+    }
+    &.client {
+      grid-column: 2 / span 5;
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 5;
+    }
+  }
+}
